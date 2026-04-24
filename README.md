@@ -9,6 +9,8 @@ kubectl port-forward svc/argocd-server 8080:443 -n argocd
 # login with admin user and below token (as in documentation):
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 --decode && echo
 
+Snapshots:
+
 <img width="2816" height="1508" alt="image" src="https://github.com/user-attachments/assets/571290c9-2153-48be-9152-602aa3feca24" />
 
 
